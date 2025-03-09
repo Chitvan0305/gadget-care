@@ -13,7 +13,7 @@ export default function AboutUs() {
       <header className="container mx-auto px-4 py-4 flex items-center justify-between">
         <div className="flex items-center">
           <a href="/">
-            <img src="/img/logo.png" alt="Gadgets Care Logo" className="h-10 w-auto" />
+            <img src="/img/logo.png" alt="Gadgets Care Logo" className="w-[120px]" />
           </a>
         </div>
 
@@ -312,7 +312,7 @@ export default function AboutUs() {
           </div>
           <div className="border-t mt-12 pt-6 text-center text-gray-500 text-sm">
             <p>
-              Copyright © {new Date().getFullYear()} - GadgetsCare | All Rights
+              Copyright © {new Date().getFullYear()} - GKBsolutions | All Rights
               Reserved.
             </p>
           </div>
