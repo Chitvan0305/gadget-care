@@ -19,14 +19,14 @@ export default function AboutUs() {
 
         <nav className="hidden md:flex items-center space-x-8">
           <a href="/" className="text-gray-600 hover:text-primary">Home</a>
-          <a href="/how-it-works" className="text-gray-600 hover:text-primary">How It Works</a>
-          <a href="/about-us" className="text-green-500 font-medium">About Us</a>
-          <a href="/contact" className="text-gray-600 hover:text-primary">Contact</a>
+          <a href="/" className="text-gray-600 hover:text-primary">How It Works</a>
+          <a href="/" className="text-green-500 font-medium">About Us</a>
+          <a href="/" className="text-gray-600 hover:text-primary">Contact</a>
         </nav>
 
         <div>
           <a
-            href="tel:12345"
+            href="tel:+918076406998"
             className="hidden md:flex items-center bg-green-500 text-white px-4 py-2 rounded-full hover:bg-green-600 transition-colors"
           >
             <PhoneCall className="me-2" size={20} /> 8076406998
@@ -322,7 +322,7 @@ export default function AboutUs() {
       {/* WhatsApp Float Button */}
       <div className="fixed bottom-6 left-6 z-50">
         <a
-          href="https://wa.me/8076406998"
+          href="https://wa.me/918076406998"
           className="flex items-center justify-center w-12 h-12 bg-green-500 text-white rounded-full shadow-lg hover:bg-green-600 transition-colors"
         >
           <svg
