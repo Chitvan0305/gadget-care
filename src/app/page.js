@@ -3,9 +3,11 @@
 import { useState } from "react";
 import { Check, ArrowRight, PhoneCall, Activity, SunMoon, Ear, Siren, Menu, X } from "lucide-react";
 import "./globals.css";
+import ContactForm from "./components/ContactForm";
 
 export default function AboutUs() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const [openModal, setModalOpen] = useState(false)
 
   return (
     <main className="min-h-screen">
@@ -81,7 +83,7 @@ export default function AboutUs() {
               professional system setup & installation services.
             </p>
             <a
-              href="/contact"
+              href="https://wa.me/918076406998"
               className="inline-flex items-center bg-green-500 text-white px-6 py-3 rounded-full hover:bg-green-600 transition-colors"
             >
               <span className="font-medium mr-2">CHAT NOW</span>
@@ -230,13 +232,13 @@ export default function AboutUs() {
                 your installation and claim your discount! T&C apply.
               </p>
             </div>
-            <a
-              href="/contact"
-              className="inline-flex items-center bg-white text-green-500 px-6 py-3 rounded-full hover:bg-gray-100 transition-colors"
+            <button
+              className="inline-flex items-center bg-white text-green-500 px-6 py-3 rounded-full hover:bg-gray-100 transition-colors border-0 outline-0"
+              onClick={() => setModalOpen(true)}
             >
               <span className="font-medium mr-2">AVAIL DISCOUNT TODAY</span>
               <ArrowRight size={18} />
-            </a>
+            </button>
           </div>
         </div>
       </section>
@@ -335,6 +337,7 @@ export default function AboutUs() {
           </svg>
         </a>
       </div>
+      <ContactForm open={openModal} setOpen={setModalOpen} />
     </main>
   );
 }
