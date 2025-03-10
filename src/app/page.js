@@ -84,7 +84,7 @@ export default function AboutUs() {
               professional system setup & installation services.
             </p>
             <a
-              href="https://wa.me/918076406998"
+              href="https://wa.me/918076406998?text=How%20can%20we%20help%20you?"
               className="inline-flex items-center bg-green-500 text-white px-6 py-3 rounded-full hover:bg-green-600 transition-colors"
             >
               <span className="font-medium mr-2">CHAT NOW</span>
