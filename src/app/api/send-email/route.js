@@ -1,20 +1,28 @@
-import { Resend } from 'resend';
+import nodemailer from 'nodemailer';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+const transporter = nodemailer.createTransport({
+  service: 'gmail',
+  auth: {
+    user: 'bagrigaurav46@gmail.com',
+    pass: 'rnbr kvwt ushx ktde',
+},
+});
 
 export async function POST(req) {
   try {
     const body = await req.json();
     const { firstName, lastName, email, phone, message } = body;
 
-    const response = await resend.emails.send({
-      from: 'gauravbagri646@gmail.com',
-      to: 'gauravbagri646@gmail.com',
+    const mailOptions = {
+      from: 'bagrigaurav46@gmail.com',
+      to: 'bagrigaurav46@gmail.com',
       subject: `Query from GKB solutions ${firstName} ${lastName}`,
-      text: `Name: ${firstName} ${lastName}\nEmail: ${email}\nPhone: ${phone}`,
-    });
+      text: `Name: ${firstName} ${lastName}\nEmail: ${email}\nPhone: ${phone}`,        
+    };
 
-    return Response.json({ success: true, data: response });
+    const info = await transporter.sendMail(mailOptions);
+
+    return Response.json({ success: true, data: info });
   } catch (error) {
     console.error('Error sending email:', error);
     return Response.json({ error: 'Failed to send email' }, { status: 500 });

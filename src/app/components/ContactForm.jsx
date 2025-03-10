@@ -11,7 +11,6 @@ const schema = yup.object().shape({
   lastName: yup.string().required('Last name is required'),
   email: yup.string().email('Invalid email').required('Email is required'),
   phone: yup.string().matches(/^[0-9]+$/, 'Phone number must be numeric').required('Phone number is required'),
-  message: yup.string().required('Message is required'),
 });
 
 export default function ContactForm({ open, setOpen }) {
