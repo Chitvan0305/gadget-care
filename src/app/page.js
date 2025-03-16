@@ -296,7 +296,7 @@ export default function AboutUs() {
                 </li>
                 <li>
                   <a
-                    href="/terms-of-use"
+                    href="/terms-and-conditions"
                     className="text-gray-600 hover:text-green-500"
                   >
                     Terms of Use
