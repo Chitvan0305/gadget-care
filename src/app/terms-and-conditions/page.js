@@ -78,15 +78,15 @@ export default function AboutUs() {
                 Home
               </a>
               <a
-                href="/how-it-works"
+                href="/"
                 className="text-gray-600 hover:text-primary"
               >
                 How It Works
               </a>
-              <a href="/about-us" className="text-green-500 font-medium">
+              <a href="/" className="text-green-500 font-medium">
                 About Us
               </a>
-              <a href="/contact" className="text-gray-600 hover:text-primary">
+              <a href="/" className="text-gray-600 hover:text-primary">
                 Contact
               </a>
             </nav>
@@ -742,7 +742,7 @@ export default function AboutUs() {
               <ul className="space-y-2">
                 <li>
                   <a
-                    href="/about-us"
+                    href="/"
                     className="text-gray-600 hover:text-green-500"
                   >
                     About Us
@@ -766,7 +766,7 @@ export default function AboutUs() {
                 </li>
                 <li>
                   <a
-                    href="/contact"
+                    href="/"
                     className="text-gray-600 hover:text-green-500"
                   >
                     Contact
