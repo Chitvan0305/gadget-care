@@ -219,7 +219,7 @@ export default function AboutUs() {
               <a
                 href={service.href}
                 key={index}
-                className="max-w-sm w-full flex-1 rounded overflow-hidden shadow-lg justify-center"
+                className="max-w-sm w-full sm:flex-1 rounded overflow-hidden shadow-lg justify-center"
               >
                 <img
                   className="h-[250px] w-full object-cover"
