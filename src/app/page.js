@@ -1,14 +1,47 @@
-'use client'
+"use client";
 
 import { useState } from "react";
-import { Check, ArrowRight, PhoneCall, Activity, SunMoon, Ear, Siren, Menu, X } from "lucide-react";
+import {
+  Check,
+  ArrowRight,
+  PhoneCall,
+  Activity,
+  SunMoon,
+  Ear,
+  Siren,
+  Menu,
+  X,
+} from "lucide-react";
 import "./globals.css";
 import ContactForm from "./components/ContactForm";
 import Image from "next/image";
 
 export default function AboutUs() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-  const [openModal, setModalOpen] = useState(false)
+  const [openModal, setModalOpen] = useState(false);
+
+  const services = [
+    {
+      img: "/img/computer-repair.avif",
+      href: "/",
+      title: "Laptop repair in Delhi NCR",
+    },
+    {
+      img: "/img/amc.webp",
+      href: "/",
+      title: "Computer AMC Delhi NCR",
+    },
+    {
+      img: "/img/security.webp",
+      href: "/",
+      title: "IT Security Delhi NCR",
+    },
+    {
+      img: "/img/survelliance.jpg",
+      href: "/",
+      title: "CCTV Surveillance Delhi NCR",
+    },
+  ];
 
   return (
     <main className="min-h-screen">
@@ -16,15 +49,27 @@ export default function AboutUs() {
       <header className="container mx-auto px-4 py-4 flex items-center justify-between">
         <div className="flex items-center">
           <a href="/">
-            <img src="/img/logo.png" alt="GKB solutions Logo" className="w-[120px]" />
+            <img
+              src="/img/logo.png"
+              alt="GKB solutions Logo"
+              className="w-[120px]"
+            />
           </a>
         </div>
 
         <nav className="hidden md:flex items-center space-x-8">
-          <a href="/" className="text-gray-600 hover:text-primary">Home</a>
-          <a href="/" className="text-gray-600 hover:text-primary">How It Works</a>
-          <a href="/" className="text-green-500 font-medium">About Us</a>
-          <a href="/" className="text-gray-600 hover:text-primary">Contact</a>
+          <a href="/" className="text-gray-600 hover:text-primary">
+            Home
+          </a>
+          <a href="/" className="text-gray-600 hover:text-primary">
+            How It Works
+          </a>
+          <a href="/" className="text-green-500 font-medium">
+            About Us
+          </a>
+          <a href="/" className="text-gray-600 hover:text-primary">
+            Contact
+          </a>
         </nav>
 
         <div>
@@ -34,7 +79,10 @@ export default function AboutUs() {
           >
             <PhoneCall className="me-2" size={20} /> 8076406998
           </a>
-          <button className="md:hidden text-gray-700" onClick={() => setIsSidebarOpen(true)}>
+          <button
+            className="md:hidden text-gray-700"
+            onClick={() => setIsSidebarOpen(true)}
+          >
             <Menu className="h-6 w-6" />
           </button>
         </div>
@@ -42,21 +90,37 @@ export default function AboutUs() {
 
       {/* Sidebar */}
       {isSidebarOpen && (
-        <div className="fixed inset-0 bg-opacity-50 z-50" onClick={() => setIsSidebarOpen(false)}>
-          <div className="fixed top-0 left-0 w-3/4 h-full bg-white shadow-lg p-6 z-50" onClick={(e) => e.stopPropagation()}>
-            <button className="mb-4 text-gray-700" onClick={() => setIsSidebarOpen(false)}>
+        <div
+          className="fixed inset-0 bg-opacity-50 z-50"
+          onClick={() => setIsSidebarOpen(false)}
+        >
+          <div
+            className="fixed top-0 left-0 w-3/4 h-full bg-white shadow-lg p-6 z-50"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              className="mb-4 text-gray-700"
+              onClick={() => setIsSidebarOpen(false)}
+            >
               <X className="h-6 w-6" />
             </button>
             <nav className="flex flex-col space-y-4">
-              <a href="/" className="text-gray-600 hover:text-primary">Home</a>
-              <a href="/" className="text-gray-600 hover:text-primary">How It Works</a>
-              <a href="/" className="text-green-500 font-medium">About Us</a>
-              <a href="/" className="text-gray-600 hover:text-primary">Contact</a>
+              <a href="/" className="text-gray-600 hover:text-primary">
+                Home
+              </a>
+              <a href="/" className="text-gray-600 hover:text-primary">
+                How It Works
+              </a>
+              <a href="/" className="text-green-500 font-medium">
+                About Us
+              </a>
+              <a href="/" className="text-gray-600 hover:text-primary">
+                Contact
+              </a>
             </nav>
           </div>
         </div>
       )}
-
 
       {/* Breadcrumb */}
       <div className="bg-green-50 rounded-2xl px-3 py-2 my-3 container">
@@ -146,40 +210,31 @@ export default function AboutUs() {
 
       {/* Security Features Section */}
       <section className=" py-12 md:py-8">
-        <div className="container mx-auto px-4">
-          <div className="bg-white rounded-lg overflow-hidden shadow-md">
-            <img
-              src="/img/security.png"
-              alt="Home Security System"
-              className="w-4/5 h-auto m-auto"
-            />
-            <div className="p-4 flex justify-center space-x-8 md:space-x-16">
-              <div className="text-center">
-                <div className="bg-gray-100 p-3 rounded-full inline-block mb-2">
-                <Activity size={32} color="#25D366" />
+        <h2 className="container text-3xl font-bold pb-8 text-[#22C55E]">
+            Trending Services in Delhi NCR
+        </h2>
+        <div className="flex gap-[16px] container mx-auto flex-wrap px-4">
+          {services.map((service, index) => {
+            return (
+              <a
+                href={service.href}
+                key={index}
+                className="max-w-sm w-full flex-1 rounded overflow-hidden shadow-lg justify-center"
+              >
+                <img
+                  className="h-[250px] w-full object-cover"
+                  src={service.img || "/img/card-top.jpg"}
+                  alt={service.title || "Service Image"}
+
+                />
+                <div className="px-6 py-4">
+                  <div className="font-bold text-xl mb-2 text-center">
+                    {service.title || "Service Title"}
+                  </div>
                 </div>
-                <p className="text-xs font-medium">Motion Detection</p>
-              </div>
-              <div className="text-center">
-                <div className="bg-gray-100 p-3 rounded-full inline-block mb-2">
-                <SunMoon size={32} color="#25D366" />
-                </div>
-                <p className="text-xs font-medium">Lighting Control</p>
-              </div>
-              <div className="text-center">
-                <div className="bg-gray-100 p-3 rounded-full inline-block mb-2">
-                <Ear size={32} color="#25D366" />
-                </div>
-                <p className="text-xs font-medium">Noise Detection</p>
-              </div>
-              <div className="text-center">
-                <div className="bg-gray-100 p-3 rounded-full inline-block mb-2">
-                <Siren size={32} color="#25D366" />
-                </div>
-                <p className="text-xs font-medium">Intruder Alert</p>
-              </div>
-            </div>
-          </div>
+              </a>
+            );
+          })}
         </div>
       </section>
 
@@ -260,14 +315,18 @@ export default function AboutUs() {
               </p>
             </div>
             <div>
-              <h3 className="text-lg font-bold text-green-500 mb-4">
-                Address
-              </h3>
+              <h3 className="text-lg font-bold text-green-500 mb-4">Address</h3>
               <p className="text-gray-600 mb-0">Building No./Flat No.: 12</p>
-              <p className="text-gray-600 mb-0">Name of Premises/Building: LAXMI BAZAAR</p>
+              <p className="text-gray-600 mb-0">
+                Name of Premises/Building: LAXMI BAZAAR
+              </p>
               <p className="text-gray-600 mb-0">Road/Street: Madanpuri Road </p>
-              <p className="text-gray-600 mb-0">Nearby Landmark: LAXMI BAZAAR </p>
-              <p className="text-gray-600 mb-0">Locality/Sub Locality: LAXMI BAZAAR </p>
+              <p className="text-gray-600 mb-0">
+                Nearby Landmark: LAXMI BAZAAR{" "}
+              </p>
+              <p className="text-gray-600 mb-0">
+                Locality/Sub Locality: LAXMI BAZAAR{" "}
+              </p>
               <p className="text-gray-600 mb-0">City/Town/Village: Gurugram</p>
               <p className="text-gray-600 mb-0">District: Gurugram</p>
               <p className="text-gray-600 mb-0">State: Haryana</p>
@@ -279,10 +338,7 @@ export default function AboutUs() {
               </h3>
               <ul className="space-y-2">
                 <li>
-                  <a
-                    href="/"
-                    className="text-gray-600 hover:text-green-500"
-                  >
+                  <a href="/" className="text-gray-600 hover:text-green-500">
                     About Us
                   </a>
                 </li>
@@ -303,10 +359,7 @@ export default function AboutUs() {
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="/"
-                    className="text-gray-600 hover:text-green-500"
-                  >
+                  <a href="/" className="text-gray-600 hover:text-green-500">
                     Contact
                   </a>
                 </li>
@@ -343,7 +396,7 @@ export default function AboutUs() {
           href="tel:+918076406998"
           className="flex items-center justify-center w-12 h-12 text-white rounded-full shadow-lg transition-colors"
         >
-          <Image src="/img/phone.png" width={32} height={32} alt="call"/>
+          <Image src="/img/phone.png" width={32} height={32} alt="call" />
         </a>
       </div>
       <ContactForm open={openModal} setOpen={setModalOpen} />
