@@ -35,38 +35,34 @@ body {
 
 /* Base styles */
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
   color: #333;
   background-color: #fff;
 }
 
 /* Custom colors */
-.text-green-500 {
-  color: #25D366;
+.text-orange-500 {
+  color: #e6324b;
 }
 
-.bg-green-500 {
-  background-color: #25D366;
+.bg-orange-500 {
+  background-color: #e6324b;
 }
 
-.hover\:bg-green-600:hover {
+.hover\:bg-orange-600:hover {
   background-color: #ea580c;
 }
 
-.hover\:text-green-500:hover {
+.hover\:text-orange-500:hover {
   color: #f97316;
 }
-
-.text-green-500 {
-  color: #22c55e;
+.bg-orange-500 {
+  background-color: #e6324b;
 }
 
-.bg-green-500 {
-  background-color: #22c55e;
-}
-
-.hover\:bg-green-600:hover {
-  background-color: #16a34a;
+.hover\:bg-orange-600:hover {
+  background-color: #ea580c;
 }
 
 .bg-green-50 {
@@ -148,15 +144,18 @@ body {
 }
 
 .shadow-lg {
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
 .shadow-md {
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
 .transition-colors {
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
@@ -226,5 +225,3 @@ body {
     line-height: 1;
   }
 }
-
-

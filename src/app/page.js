@@ -24,7 +24,7 @@ export default function AboutUs() {
     {
       img: "/img/computer-repair.avif",
       href: "/",
-      title: "Laptop repair in Delhi NCR",
+      title: "Laptop service in Delhi NCR",
     },
     {
       img: "/img/amc.webp",
@@ -64,7 +64,7 @@ export default function AboutUs() {
           <a href="/" className="text-gray-600 hover:text-primary">
             How It Works
           </a>
-          <a href="/" className="text-green-500 font-medium">
+          <a href="/" className="text-orange-500 font-medium">
             About Us
           </a>
           <a href="/" className="text-gray-600 hover:text-primary">
@@ -75,7 +75,7 @@ export default function AboutUs() {
         <div>
           <a
             href="tel:+918076406998"
-            className="hidden md:flex items-center bg-green-500 text-white px-4 py-2 rounded-full hover:bg-green-600 transition-colors"
+            className="hidden md:flex items-center bg-orange-500 text-white px-4 py-2 rounded-full hover:bg-orange-600 transition-colors"
           >
             <PhoneCall className="me-2" size={20} /> 8076406998
           </a>
@@ -111,7 +111,7 @@ export default function AboutUs() {
               <a href="/" className="text-gray-600 hover:text-primary">
                 How It Works
               </a>
-              <a href="/" className="text-green-500 font-medium">
+              <a href="/" className="text-orange-500 font-medium">
                 About Us
               </a>
               <a href="/" className="text-gray-600 hover:text-primary">
@@ -123,14 +123,14 @@ export default function AboutUs() {
       )}
 
       {/* Breadcrumb */}
-      <div className="bg-green-50 rounded-2xl px-3 py-2 my-3 container">
+      <div className="bg-orange-50 rounded-2xl px-3 py-2 my-3 container">
         <div className="container mx-auto px-4">
           <div className="text-sm text-gray-500">
-            <a href="/" className="hover:text-green-500">
+            <a href="/" className="hover:text-orange-500">
               HOME
             </a>
             <span className="mx-2">/</span>
-            <span className="text-green-700 font-bold">ABOUT US</span>
+            <span className="text-orange-700 font-bold">ABOUT US</span>
           </div>
         </div>
       </div>
@@ -139,7 +139,7 @@ export default function AboutUs() {
       <section className="container mx-auto px-4 py-5 md:py-8">
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div>
-            <h1 className="text-4xl md:text-5xl font-bold text-green-500 mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold text-orange-500 mb-6">
               About us
             </h1>
             <p className="text-gray-600 mb-8">
@@ -149,7 +149,7 @@ export default function AboutUs() {
             </p>
             <a
               href="https://wa.me/918076406998?text=How%20can%20we%20help%20you?"
-              className="inline-flex items-center bg-green-500 text-white px-6 py-3 rounded-full hover:bg-green-600 transition-colors"
+              className="inline-flex items-center bg-orange-500 text-white px-6 py-3 rounded-full hover:bg-orange-600 transition-colors"
             >
               <span className="font-medium mr-2">CHAT NOW</span>
               <ArrowRight size={18} />
@@ -166,7 +166,7 @@ export default function AboutUs() {
       </section>
 
       {/* Available For You Section */}
-      <section className="container-fluid mx-auto px-4 py-5 md:py-8 bg-green-50">
+      <section className="container-fluid mx-auto px-4 py-5 md:py-8 bg-orange-50">
         <div className="grid md:grid-cols-2 gap-8 items-center container">
           <div className="order-2 md:order-1 flex justify-start max-md:justify-center">
             <img
@@ -176,7 +176,7 @@ export default function AboutUs() {
             />
           </div>
           <div className="order-1 md:order-2">
-            <h2 className="text-3xl font-bold text-green-500 mb-6">
+            <h2 className="text-3xl font-bold text-orange-500 mb-6">
               AVAILABLE FOR YOU
             </h2>
             <p className="text-gray-600 mb-8">
@@ -188,17 +188,17 @@ export default function AboutUs() {
             </p>
             <div className="space-y-4">
               <div className="flex items-start">
-                <Check className="text-green-500 mr-2 mt-1 flex-shrink-0" />
+                <Check className="text-orange-500 mr-2 mt-1 flex-shrink-0" />
                 <p className="text-gray-700 font-medium">
                   Professional Experts
                 </p>
               </div>
               <div className="flex items-start">
-                <Check className="text-green-500 mr-2 mt-1 flex-shrink-0" />
+                <Check className="text-orange-500 mr-2 mt-1 flex-shrink-0" />
                 <p className="text-gray-700 font-medium">Quality assurance</p>
               </div>
               <div className="flex items-start">
-                <Check className="text-green-500 mr-2 mt-1 flex-shrink-0" />
+                <Check className="text-orange-500 mr-2 mt-1 flex-shrink-0" />
                 <p className="text-gray-700 font-medium">
                   Seamless and hassle-free Installation
                 </p>
@@ -210,8 +210,8 @@ export default function AboutUs() {
 
       {/* Security Features Section */}
       <section className=" py-12 md:py-8">
-        <h2 className="container text-3xl font-bold pb-8 text-[#22C55E]">
-            Trending Services in Delhi NCR
+        <h2 className="container text-3xl font-bold pb-8 text-[#e6324b]">
+          Trending Services in Delhi NCR
         </h2>
         <div className="flex gap-[16px] container mx-auto flex-wrap px-4">
           {services.map((service, index) => {
@@ -225,7 +225,6 @@ export default function AboutUs() {
                   className="h-[250px] w-full object-cover"
                   src={service.img || "/img/card-top.jpg"}
                   alt={service.title || "Service Image"}
-
                 />
                 <div className="px-6 py-4">
                   <div className="font-bold text-xl mb-2 text-center">
@@ -240,11 +239,11 @@ export default function AboutUs() {
 
       {/* Mission Section */}
 
-      <div className="container-fluid bg-green-50 max-md:py-3">
-        <div className="container bg-green-50 flex max-md:flex-col">
-          <section className="bg-green-50 py-12 max-md:py-2">
+      <div className="container-fluid bg-orange-50 max-md:py-3">
+        <div className="container bg-orange-50 flex max-md:flex-col">
+          <section className="bg-orange-50 py-12 max-md:py-2">
             <div className="container mx-auto px-4">
-              <h2 className="text-3xl font-bold text-green-500 text-center mb-8 max-md:mb-3">
+              <h2 className="text-3xl font-bold text-orange-500 text-center mb-8 max-md:mb-3">
                 OUR MISSION
               </h2>
               <p className="text-gray-600 text-center max-w-3xl mx-auto mb-8">
@@ -257,9 +256,9 @@ export default function AboutUs() {
           </section>
 
           {/* Team Section */}
-          <section className="bg-green-50 py-12 max-md:py-2">
+          <section className="bg-orange-50 py-12 max-md:py-2">
             <div className="container mx-auto px-4">
-              <h2 className="text-3xl font-bold text-green-500 text-center mb-8 max-md:mb-3">
+              <h2 className="text-3xl font-bold text-orange-500 text-center mb-8 max-md:mb-3">
                 OUR TEAM
               </h2>
               <p className="text-gray-600 text-center max-w-3xl mx-auto">
@@ -275,7 +274,7 @@ export default function AboutUs() {
       </div>
 
       {/* Promotion Section */}
-      <section className="bg-green-500 py-12">
+      <section className="bg-orange-500 py-12">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-6 md:mb-0">
@@ -289,7 +288,7 @@ export default function AboutUs() {
               </p>
             </div>
             <button
-              className="inline-flex items-center bg-white text-green-500 px-6 py-3 rounded-full hover:bg-gray-100 transition-colors border-0 outline-0"
+              className="inline-flex items-center bg-white text-orange-500 px-6 py-3 rounded-full hover:bg-gray-100 transition-colors border-0 outline-0"
               onClick={() => setModalOpen(true)}
             >
               <span className="font-medium mr-2">AVAIL DISCOUNT TODAY</span>
@@ -304,7 +303,7 @@ export default function AboutUs() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
-              <h3 className="text-lg font-bold text-green-500 mb-4">
+              <h3 className="text-lg font-bold text-orange-500 mb-4">
                 About Us
               </h3>
               <p className="text-gray-600">
@@ -315,7 +314,9 @@ export default function AboutUs() {
               </p>
             </div>
             <div>
-              <h3 className="text-lg font-bold text-green-500 mb-4">Address</h3>
+              <h3 className="text-lg font-bold text-orange-500 mb-4">
+                Address
+              </h3>
               <p className="text-gray-600 mb-0">Building No./Flat No.: 12</p>
               <p className="text-gray-600 mb-0">
                 Name of Premises/Building: LAXMI BAZAAR
@@ -333,19 +334,19 @@ export default function AboutUs() {
               <p className="text-gray-600">PIN Code: 122006</p>
             </div>
             <div>
-              <h3 className="text-lg font-bold text-green-500 mb-4">
+              <h3 className="text-lg font-bold text-orange-500 mb-4">
                 Quick Links
               </h3>
               <ul className="space-y-2">
                 <li>
-                  <a href="/" className="text-gray-600 hover:text-green-500">
+                  <a href="/" className="text-gray-600 hover:text-orange-500">
                     About Us
                   </a>
                 </li>
                 <li>
                   <a
                     href="/privacy-policy"
-                    className="text-gray-600 hover:text-green-500"
+                    className="text-gray-600 hover:text-orange-500"
                   >
                     Privacy Policy
                   </a>
@@ -353,13 +354,13 @@ export default function AboutUs() {
                 <li>
                   <a
                     href="/terms-and-conditions"
-                    className="text-gray-600 hover:text-green-500"
+                    className="text-gray-600 hover:text-orange-500"
                   >
                     Terms of Use
                   </a>
                 </li>
                 <li>
-                  <a href="/" className="text-gray-600 hover:text-green-500">
+                  <a href="/" className="text-gray-600 hover:text-orange-500">
                     Contact
                   </a>
                 </li>
@@ -379,7 +380,7 @@ export default function AboutUs() {
       <div className="fixed bottom-6 left-6 z-50">
         <a
           href="https://wa.me/918076406998?text=How%20can%20we%20help%20you?"
-          className="flex items-center justify-center w-12 h-12 bg-green-500 text-white rounded-full shadow-lg hover:bg-green-600 transition-colors"
+          className="flex items-center justify-center w-12 h-12 bg-orange-500 text-white rounded-full shadow-lg hover:bg-orange-600 transition-colors"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

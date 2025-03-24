@@ -1,11 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import {
-  PhoneCall,
-  Menu,
-  X,
-} from "lucide-react";
+import { PhoneCall, Menu, X } from "lucide-react";
 import "../globals.css";
 import Image from "next/image";
 
@@ -44,7 +40,7 @@ export default function AboutUs() {
         <div>
           <a
             href="tel:+918076406998"
-            className="hidden md:flex items-center bg-green-500 text-white px-4 py-2 rounded-full hover:bg-green-600 transition-colors"
+            className="hidden md:flex items-center bg-orange-500 text-white px-4 py-2 rounded-full hover:bg-orange-600 transition-colors"
           >
             <PhoneCall className="me-2" size={20} /> 8076406998
           </a>
@@ -77,13 +73,10 @@ export default function AboutUs() {
               <a href="/" className="text-gray-600 hover:text-primary">
                 Home
               </a>
-              <a
-                href="/"
-                className="text-gray-600 hover:text-primary"
-              >
+              <a href="/" className="text-gray-600 hover:text-primary">
                 How It Works
               </a>
-              <a href="/" className="text-green-500 font-medium">
+              <a href="/" className="text-orange-500 font-medium">
                 About Us
               </a>
               <a href="/" className="text-gray-600 hover:text-primary">
@@ -95,14 +88,16 @@ export default function AboutUs() {
       )}
 
       {/* Breadcrumb */}
-      <div className="bg-green-50 rounded-2xl px-3 py-2 my-3 container">
+      <div className="bg-orange-50 rounded-2xl px-3 py-2 my-3 container">
         <div className="container mx-auto px-4">
           <div className="text-sm text-gray-500">
-            <a href="/" className="hover:text-green-500">
+            <a href="/" className="hover:text-orange-500">
               HOME
             </a>
             <span className="mx-2">/</span>
-            <span className="text-green-700 font-bold">Terms-and-Conditions</span>
+            <span className="text-orange-700 font-bold">
+              Terms-and-Conditions
+            </span>
           </div>
         </div>
       </div>
@@ -112,16 +107,16 @@ export default function AboutUs() {
         <p>
           Welcome to GKB Solutions web portal (“the Company”) the sole property
           of Tecmicra Solutions. These terms and conditions are applicable to
-          the domain and sub-domains and Mobile Apps of gkbsolutions.in
-          offering Home & Office Support Services (the “Website”) to you
-          (“User”) and partner (“Partner”). These terms and conditions are
-          applicable to all users across India who log into the Website using
-          any communication media including but not limited to personal
-          computer, other computers, laptops, kiosks, mobile phones or other
-          devices whatsoever presently in use or introduced in future. Your
-          usage of the Website, in particular any Technical Support Services
-          provided by the Company are governed by the terms and conditions
-          contained herein (hereinafter called “Agreement”).
+          the domain and sub-domains and Mobile Apps of gkbsolutions.in offering
+          Home & Office Support Services (the “Website”) to you (“User”) and
+          partner (“Partner”). These terms and conditions are applicable to all
+          users across India who log into the Website using any communication
+          media including but not limited to personal computer, other computers,
+          laptops, kiosks, mobile phones or other devices whatsoever presently
+          in use or introduced in future. Your usage of the Website, in
+          particular any Technical Support Services provided by the Company are
+          governed by the terms and conditions contained herein (hereinafter
+          called “Agreement”).
         </p>
         <p>
           THE USER AND PARTNER IS ADVISED TO READ THE TERMS AND CONDITIONS
@@ -243,7 +238,9 @@ export default function AboutUs() {
       </div>
 
       <div class="sectipn px-4">
-        <h1 class="font-bold text-lg py-3">BOOKING OF HOME AND BUSINESS SUPPORT SERVICES</h1>
+        <h1 class="font-bold text-lg py-3">
+          BOOKING OF HOME AND BUSINESS SUPPORT SERVICES
+        </h1>
         <p>
           The Website provides detailed information on Services that a User can
           book on the Website and such Services are delivered to the User by the
@@ -262,8 +259,8 @@ export default function AboutUs() {
           service.
         </p>
         <p>
-          User fully understands that the website gkbsolutions.in owned by
-          GKB Solutions is an independent company based in India and it has no
+          User fully understands that the website gkbsolutions.in owned by GKB
+          Solutions is an independent company based in India and it has no
           connection or affiliation with any other service provider company. The
           User may be contacted by the expert representative of the partner
           company to discuss the bookings and best offers for Services and
@@ -290,8 +287,8 @@ export default function AboutUs() {
         <p>
           In case a User encounters any communication problem with respect to
           the ordered Services, User may contact the Company at
-          services@gkbsolutions.in and through the phone number displayed on
-          the website as notified in the payment confirmation notification. The
+          services@gkbsolutions.in and through the phone number displayed on the
+          website as notified in the payment confirmation notification. The
           company will respond to customer basic queries placed before/after
           purchase of services/products within 24 hrs. (at no charge) and fix
           the complaints within two working days when a User reports a complaint
@@ -386,7 +383,9 @@ export default function AboutUs() {
       </div>
 
       <div class="sectipn px-4">
-        <h1 class="font-bold text-lg py-3">RESTRICTIONS AND DISQUALIFICATIONS</h1>
+        <h1 class="font-bold text-lg py-3">
+          RESTRICTIONS AND DISQUALIFICATIONS
+        </h1>
         <p>
           The Company shall within its sole discretion, suspend, or cancel an
           order or continued processing of an order and forfeit the Transaction
@@ -696,9 +695,7 @@ export default function AboutUs() {
       <div class="sectipn px-4 pb-4">
         <p>
           For any query about our terms of service, Kindly mail us at{" "}
-          <a href="mailto:services@gkbsolutions.in">
-            services@gkbsolutions.in
-          </a>
+          <a href="mailto:services@gkbsolutions.in">services@gkbsolutions.in</a>
         </p>
       </div>
 
@@ -707,7 +704,7 @@ export default function AboutUs() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
-              <h3 className="text-lg font-bold text-green-500 mb-4">
+              <h3 className="text-lg font-bold text-orange-500 mb-4">
                 About Us
               </h3>
               <p className="text-gray-600">
@@ -718,7 +715,9 @@ export default function AboutUs() {
               </p>
             </div>
             <div>
-              <h3 className="text-lg font-bold text-green-500 mb-4">Address</h3>
+              <h3 className="text-lg font-bold text-orange-500 mb-4">
+                Address
+              </h3>
               <p className="text-gray-600 mb-0">Building No./Flat No.: 12</p>
               <p className="text-gray-600 mb-0">
                 Name of Premises/Building: LAXMI BAZAAR
@@ -736,22 +735,19 @@ export default function AboutUs() {
               <p className="text-gray-600">PIN Code: 122006</p>
             </div>
             <div>
-              <h3 className="text-lg font-bold text-green-500 mb-4">
+              <h3 className="text-lg font-bold text-orange-500 mb-4">
                 Quick Links
               </h3>
               <ul className="space-y-2">
                 <li>
-                  <a
-                    href="/"
-                    className="text-gray-600 hover:text-green-500"
-                  >
+                  <a href="/" className="text-gray-600 hover:text-orange-500">
                     About Us
                   </a>
                 </li>
                 <li>
                   <a
                     href="/privacy-policy"
-                    className="text-gray-600 hover:text-green-500"
+                    className="text-gray-600 hover:text-orange-500"
                   >
                     Privacy Policy
                   </a>
@@ -759,16 +755,13 @@ export default function AboutUs() {
                 <li>
                   <a
                     href="/terms-of-use"
-                    className="text-gray-600 hover:text-green-500"
+                    className="text-gray-600 hover:text-orange-500"
                   >
                     Terms of Use
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="/"
-                    className="text-gray-600 hover:text-green-500"
-                  >
+                  <a href="/" className="text-gray-600 hover:text-orange-500">
                     Contact
                   </a>
                 </li>
@@ -788,7 +781,7 @@ export default function AboutUs() {
       <div className="fixed bottom-6 left-6 z-50">
         <a
           href="https://wa.me/918076406998?text=How%20can%20we%20help%20you?"
-          className="flex items-center justify-center w-12 h-12 bg-green-500 text-white rounded-full shadow-lg hover:bg-green-600 transition-colors"
+          className="flex items-center justify-center w-12 h-12 bg-orange-500 text-white rounded-full shadow-lg hover:bg-orange-600 transition-colors"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

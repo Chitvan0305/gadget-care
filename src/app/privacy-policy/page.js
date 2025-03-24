@@ -40,7 +40,7 @@ export default function AboutUs() {
         <div>
           <a
             href="tel:+918076406998"
-            className="hidden md:flex items-center bg-green-500 text-white px-4 py-2 rounded-full hover:bg-green-600 transition-colors"
+            className="hidden md:flex items-center bg-orange-500 text-white px-4 py-2 rounded-full hover:bg-orange-600 transition-colors"
           >
             <PhoneCall className="me-2" size={20} /> 8076406998
           </a>
@@ -73,13 +73,10 @@ export default function AboutUs() {
               <a href="/" className="text-gray-600 hover:text-primary">
                 Home
               </a>
-              <a
-                href="/"
-                className="text-gray-600 hover:text-primary"
-              >
+              <a href="/" className="text-gray-600 hover:text-primary">
                 How It Works
               </a>
-              <a href="/" className="text-green-500 font-medium">
+              <a href="/" className="text-orange-500 font-medium">
                 About Us
               </a>
               <a href="/" className="text-gray-600 hover:text-primary">
@@ -91,14 +88,14 @@ export default function AboutUs() {
       )}
 
       {/* Breadcrumb */}
-      <div className="bg-green-50 rounded-2xl px-3 py-2 my-3 container">
+      <div className="bg-orange-50 rounded-2xl px-3 py-2 my-3 container">
         <div className="container mx-auto px-4">
           <div className="text-sm text-gray-500">
-            <a href="/" className="hover:text-green-500">
+            <a href="/" className="hover:text-orange-500">
               HOME
             </a>
             <span className="mx-2">/</span>
-            <span className="text-green-700 font-bold">Privacy</span>
+            <span className="text-orange-700 font-bold">Privacy</span>
           </div>
         </div>
       </div>
@@ -117,10 +114,10 @@ export default function AboutUs() {
           Our platform allows customers wanting home and business support
           services to connect with related professionals registered and verified
           on our platform. However, the registered partners do not have any
-          claim on the domain <strong>GKB solutions</strong> as their own.
-          GKB solutions reserves the right to terminate association with a
-          vendor anytime without prior consent. All the bills and invoices for
-          services will be issued solely by GKB solutions.
+          claim on the domain <strong>GKB solutions</strong> as their own. GKB
+          solutions reserves the right to terminate association with a vendor
+          anytime without prior consent. All the bills and invoices for services
+          will be issued solely by GKB solutions.
         </p>
 
         <h2 class="text-xl font-semibold mb-2">Refund & Charge-back Policy</h2>
@@ -217,7 +214,7 @@ export default function AboutUs() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
-              <h3 className="text-lg font-bold text-green-500 mb-4">
+              <h3 className="text-lg font-bold text-orange-500 mb-4">
                 About Us
               </h3>
               <p className="text-gray-600">
@@ -228,7 +225,9 @@ export default function AboutUs() {
               </p>
             </div>
             <div>
-              <h3 className="text-lg font-bold text-green-500 mb-4">Address</h3>
+              <h3 className="text-lg font-bold text-orange-500 mb-4">
+                Address
+              </h3>
               <p className="text-gray-600 mb-0">Building No./Flat No.: 12</p>
               <p className="text-gray-600 mb-0">
                 Name of Premises/Building: LAXMI BAZAAR
@@ -246,22 +245,19 @@ export default function AboutUs() {
               <p className="text-gray-600">PIN Code: 122006</p>
             </div>
             <div>
-              <h3 className="text-lg font-bold text-green-500 mb-4">
+              <h3 className="text-lg font-bold text-orange-500 mb-4">
                 Quick Links
               </h3>
               <ul className="space-y-2">
                 <li>
-                  <a
-                    href="/"
-                    className="text-gray-600 hover:text-green-500"
-                  >
+                  <a href="/" className="text-gray-600 hover:text-orange-500">
                     About Us
                   </a>
                 </li>
                 <li>
                   <a
                     href="/privacy-policy"
-                    className="text-gray-600 hover:text-green-500"
+                    className="text-gray-600 hover:text-orange-500"
                   >
                     Privacy Policy
                   </a>
@@ -269,16 +265,13 @@ export default function AboutUs() {
                 <li>
                   <a
                     href="/terms-of-use"
-                    className="text-gray-600 hover:text-green-500"
+                    className="text-gray-600 hover:text-orange-500"
                   >
                     Terms of Use
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="/"
-                    className="text-gray-600 hover:text-green-500"
-                  >
+                  <a href="/" className="text-gray-600 hover:text-orange-500">
                     Contact
                   </a>
                 </li>
@@ -298,7 +291,7 @@ export default function AboutUs() {
       <div className="fixed bottom-6 left-6 z-50">
         <a
           href="https://wa.me/918076406998?text=How%20can%20we%20help%20you?"
-          className="flex items-center justify-center w-12 h-12 bg-green-500 text-white rounded-full shadow-lg hover:bg-green-600 transition-colors"
+          className="flex items-center justify-center w-12 h-12 bg-orange-500 text-white rounded-full shadow-lg hover:bg-orange-600 transition-colors"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
